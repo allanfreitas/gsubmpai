@@ -1,0 +1,3 @@
+[submodule "kmodels"]
+	path = kmodels
+	url = git@github.com:allanfreitas/gsubchild.git
