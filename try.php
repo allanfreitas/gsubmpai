@@ -1,13 +1,14 @@
 <?php
 
 
-$myVar = '';
 
 if (count($argv) > 1)
 {
-  $name = $argv[1];
 
-  var_dump($name);
+  require 'kmodels/User.php';
+  $username = $argv[1];
+  $user = new User($username);
+  var_dump($user);
   echo('Stop');exit;
 }else{
   die('No Parameters');
